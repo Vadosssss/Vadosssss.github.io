@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head><title>Захист від дампінгу і переповнення буфера</title>
+    <link rel="stylesheet" href="31231241241_files/nettest.css" type="text/css"/>
+    <script type="text/javascript" src="31231241241_files/nettest.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<div id="cover"></div>
+<div id="popup">
+    <div id="top">Результаты теста</div>
+    <div id="border">
+        <div class="content">
+            <table>
+                <tr>
+                    <td valign="top"><img src="31231241241_files/okicon.gif" alt=""/></td>
+                    <td>
+                        <div id="msg"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input id="close-btn" type="button" value="Закрыть" onclick="hidePopup();"/></div>
+</div>
+<div id="wrapper">
+    <div id="container">
+        <div id="header">Программный комплекс <a href="http://kpolyakov.spb.ru/prog/nettest.htm">NetTest</a></div>
+        <div id="content">
+            <form id="form" action="#"><input type="hidden" name="code" value="rrcccrcrrrrrrrr"/><input type="hidden"
+                                                                                                        name="showans"
+                                                                                                        value="1"/>
+                <h1>Захист від дампінгу і переповнення буфера</h1>
+                <div class="q" id="q1">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">1. Що таке <i><b>дамп </b></i>пам&apos;яті?</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a1" value="1"/></td>
+                            <td class="ans">вміст робочої пам&apos;яті процесу, ядра або всієї операційної системи в
+                                певний момент часу
+                            </td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">резервна копія програмного засобу на жорсткому диску</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">це засіб для отримання копії адресного простору виконуваного файлу</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q2">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">2. Що таке <i><b>дампер?</b></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a2" value="1"/></td>
+                            <td class="ans">Програма для зняття копії адресного простору певної програми</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">програма для захисту від динамічного дослідження</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">людина-хакер, яка займається зламом програм</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q3">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">3. Виберіть з переліку програми-дампери.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a3" value="1"/></td>
+                            <td class="ans">PE TOOLS</td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a3" value="1"/></td>
+                            <td class="ans">OllyDump</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q4">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">4. Виберіть з переліку програми-дампери.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a4" value="1"/></td>
+                            <td class="ans">LordPE Delux</td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a4" value="1"/></td>
+                            <td class="ans">Proc Dumper</td>
+                        </tr>
+
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a4" value="1"/></td>
+                            <td class="ans">PE Tools</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="q" id="q5">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">5. Виберіть з переліку програми-антидампери.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a5" value="1"/></td>
+                            <td class="ans">AS Protect</td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a5" value="1"/></td>
+                            <td class="ans">Yoda&apos;s Pro</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="q" id="q6">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">6. Яка функція починає завантаження виконуваного файлу?</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a6" value="1"/></td>
+                            <td class="ans">CreateProcess()</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">LoadProcess()</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">LoadLibrary()</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">LoadProgram()</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q7">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">7. Виберіть з переліку ті АРІ-функції, на яких базуються усі
+                                    програми-дампери.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a7" value="1"/></td>
+                            <td class="ans">OpenProcess()</td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a7" value="1"/></td>
+                            <td class="ans">VirtualQueryEx()</td>
+                        </tr>
+                        <tr>
+                            <td class="check"><input type="checkbox" name="a7" value="1"/></td>
+                            <td class="ans">ReadProcessMemory()</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="q" id="q8">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">8. Який метод захисту пердбачає встановлення хуків на функції
+                                    OpenProcess(), VirtualQueryEx()та ReadProcessMemory()?
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a8" value="1"/></td>
+                            <td class="ans">антидампінг у нульовому кільці</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">метод вкрадених байтів</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">зачищення заголовка програми і оперативній пам&apos;яті</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">використання віртуальної машини</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q9">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">9. Який метод захисту від дампінгу використовує програма <i><b>Armadillo?</b></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">антидампінг у нульовому кільці</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">метод вкрадених байтів</td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a9" value="1"/></td>
+                            <td class="ans">динамічне розпакування</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">зачищення заголовка виконуваного файлу</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q10">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">10. Який метод захисту від дампінгу використовує програма <b><i>Yoda’s
+                                    Crypter</i></b>?
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a10" value="1"/></td>
+                            <td class="ans">метод зачистки заголовку</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">метод вкрадених байтів</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">динамічне розпакування</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">антидампінг у нульовому кільці</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q11">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">11. Який метод захисту від дампінгу використовує програма <b><i>VMProtect</i></b>?
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a11" value="1"/></td>
+                            <td class="ans">використання віртуальних машин</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">динамічне розпакування</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">зачистка заголовку</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">антидампінг у нульовому кільці</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q12">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">12. Який метод захисту від дампінгу використовує програма <i><b>ASProtect</b></i>?
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">динамічне розпакування</td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a12" value="1"/></td>
+                            <td class="ans">метод вкрадених байтів</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">антидампінг у нульовому кільці</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">зачистка заголовку</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q13">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">13. В чому сутність методу <b>динамічного розпакування</b>?</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a13" value="1"/></td>
+                            <td class="ans">розпакування захищуваної програми не повністю, а частинами</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">зняття дампу пам&apos;яті в динаміці, під час роботи програми</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">використання у програмі динамічного розташування об&apos;єктів, масивів</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q14">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">14. В чому сутність методу <b>вкрадених байтів</b>?</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a14" value="1"/></td>
+                            <td class="ans">фрагмент коду знаходиться і виконується у динамічно виділеній пам&apos;яті
+                            </td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">з програми вирізається частина коду, щоб дампер не міг її виконати</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">модифікація частини байтів програми х метою ввести в оману зламника</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="q" id="q15">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <div class="label">15. Метод <b>зачистки заголовка</b> полягає у тому, що ...</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="radio"><input type="radio" name="a15" value="1"/></td>
+                            <td class="ans">стирання або модифікаця таблиці секцій завадить збиранню інформації про
+                                образ
+                            </td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">DOS-заголовок замінюється на РЕ-заголовок і навпаки</td>
+                        </tr>
+                        <tr>
+                             
+                            <td class="ans">РЕ-заголовок переноситься в іншу ділянку пам&apos;яті, а його місце
+                                прописується нулями
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="submit"><input id="submit-btn" type="submit" value="Проверить ответы" name="submit"
+                                        onclick="return checkAnswers(this.form);"/></div>
+            </form>
+        </div>
+        <div id="footer">
+            <table width="100%">
+                <tr>
+                    <td>&copy; К. Поляков, 2019</td>
+                    <td class="r"><a href="http://kpolyakov.spb.ru/">kpolyakov.spb.ru</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
